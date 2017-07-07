@@ -2,7 +2,7 @@
 > 100024 The encryption passphrase provided does not match with passphrase associated with the following server: %ServerName Please update the server settings with the current passphrase for data encryption.
 
 # Summary
-According to a handful of posts this error can be "resolved" by deleting the server from the Azure Backup UI. Although this is somewhat true, the documentation is old and lacks explanation of the root cause.  Surely, re-registering a server with a different encrytpion key will throw this error. The solution then should be the use of the correct encryption key and the root cause is probably bad key management. However, if key management is not the issue then the root cause is something different. In my case, the problem was two servers with the same name uploading into the same Resource Pool.
+According to a handful of posts this error can be "resolved" by deleting the server from the Azure Backup UI. Although this is somewhat true, the documentation is old and lacks explanation of the root cause.  Surely, re-registering a server with a different encryption key will throw this error. The solution then should be the use of the correct encryption key and the root cause is probably bad key management. However, if key management is not the issue then the root cause is something different. In my case, the problem was two servers with the same name uploading into the same Resource Pool.
 
 # Solution
 ## Incorrect approach.
